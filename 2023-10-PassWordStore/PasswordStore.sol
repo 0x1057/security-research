@@ -11,6 +11,7 @@ contract PasswordStore {
     error PasswordStore__NotOwner();
 
     address private s_owner;
+    //@audit don't put senstitive information on chain!!!!
     string private s_password;
 
     event SetNetPassword();
